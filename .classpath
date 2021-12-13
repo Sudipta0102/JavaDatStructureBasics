@@ -7,12 +7,12 @@
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/Baban/eclipse-workspace/backtosquaretwo/jars/jackson-annotations-2.12.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Baban/eclipse-workspace/backtosquaretwo/jars/jackson-core-2.12.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Baban/eclipse-workspace/backtosquaretwo/jars/jackson-databind-2.12.3.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Baban/eclipse-workspace/backtosquaretwo/jars/guava-21.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Baban/eclipse-workspace/backtosquaretwo/jars/json-20210307.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Baban/eclipse-workspace/backtosquaretwo/jars/org.json-chargebee-1.0.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Baban/eclipse-workspace/backtosquaretwo/jars/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="jars/commons-io-2.4.jar"/>
+	<classpathentry kind="lib" path="jars/guava-21.0.jar"/>
+	<classpathentry kind="lib" path="jars/jackson-annotations-2.12.3.jar"/>
+	<classpathentry kind="lib" path="jars/jackson-core-2.12.3.jar"/>
+	<classpathentry kind="lib" path="jars/jackson-databind-2.12.3.jar"/>
+	<classpathentry kind="lib" path="jars/json-20210307.jar"/>
+	<classpathentry kind="lib" path="jars/org.json-chargebee-1.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
