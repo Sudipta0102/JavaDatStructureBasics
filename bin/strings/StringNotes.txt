@@ -1,0 +1,10 @@
+1. String and String buffer do not share the same equals method
+
+		String uses the onw which is overriden from Object class...
+		link: https://www.geeksforgeeks.org/equals-string-stringbuffer-objects-java/
+		
+		
+2. When to use StringJoiner over StringBuilder?
+		
+		StringJoiner is very useful, when you need to join Strings in a Stream. 
+		www.geeksforgeeks.org/use-stringjoiner-stringbuilder/		

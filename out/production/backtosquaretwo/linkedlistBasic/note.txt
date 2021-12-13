@@ -1,0 +1,21 @@
+
+
+delete:
+ 1. deleteIndex
+ 2. deleteFirst
+ 3. deleteLast
+ 
+Insert:
+ 1. insertIndex
+ 2. insertFirst
+ 3. insertLast
+ 
+Fetch:
+ 1. getElementAtIndex
+ 2. getFirst
+ 3. getLast
+ 
+Modify:
+ 1. modifyFirst 
+ 2. modifyLast
+ 3. modifyAtIndex   

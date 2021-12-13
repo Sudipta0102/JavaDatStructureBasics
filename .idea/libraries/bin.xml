@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="bin">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/commons-io-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/org.json-chargebee-1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/jackson-core-2.12.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/jackson-databind-2.12.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/json-20210307.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/jackson-annotations-2.12.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/guava-21.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
