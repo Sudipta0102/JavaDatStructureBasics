@@ -1,4 +1,4 @@
-package TreeBasic.Tree50GFGLevel1;
+ackage TreeBasic.Tree50GFGLevel1;
 
 import java.util.LinkedList;
 import java.util.Queue;

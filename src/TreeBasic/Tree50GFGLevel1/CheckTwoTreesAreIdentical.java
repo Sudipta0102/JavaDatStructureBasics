@@ -45,6 +45,56 @@ public class CheckTwoTreesAreIdentical {
 		
 		return true;
 	}
+	
+	public static boolean funcDoneRight(Node root1, Node root2) {
+		
+		if(root1==null && root2==null) 
+			return true;
+		
+		if(root1==null || root2==null)
+			return false;
+		
+		Queue<Node> q1 = new LinkedList<Node>();
+		Queue<Node> q2 = new LinkedList<Node>();
+		
+		q1.add(root1);
+		q2.add(root2);
+		
+		
+		
+		while(!q1.isEmpty() && !q2.isEmpty()) {
+			
+			Node cur1 = q1.poll();
+			Node cur2 = q2.poll();
+			
+			if(cur1.key != cur2.key) {
+				return false;
+			}
+			
+			// attempting to add left child of both tree into respective queue. 
+			if(cur1.left!=null && cur2.left!=null) {
+				q1.add(cur1.left);
+				q2.add(cur2.left);
+			}
+			// one of them don't have left child
+			else if(cur1.left!=null || cur2.left!=null) {
+				return false;
+			}
+			
+			// attempting to add right child of both tree into respective queue.
+			if(cur1.right!=null && cur2.right!=null) {
+				q1.add(cur1.right);
+				q2.add(cur2.right);
+			}
+			// one of them don't have left child
+			else if(cur1.right!=null || cur2.right!=null) {
+				return false;
+			}
+		}
+		
+		
+		return true;
+	}
 
 	
 	
@@ -68,7 +118,7 @@ public class CheckTwoTreesAreIdentical {
 		root3.left.right = new Node(4);
 
 		//System.out.println(func(root1, root2));
-		System.out.println(func(root2, root3));
+		System.out.println(funcDoneRight(root2, root3));
 
 	}
 }
