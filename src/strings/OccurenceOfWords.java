@@ -31,6 +31,17 @@ public class OccurenceOfWords {
 		
 		
 	}
+	
+	static void func2(String str) {
+		Map<String, Integer> m = new HashMap<>();
+		String[] sArr = str.split("\\W");
+		
+		for(String s: sArr){
+			
+			m.containsKey(s)? m.put(s, m.get(s)+1):m.put(s, 1); 
+			
+		}
+	}
 
 	public static void main(String[] args) {
 		

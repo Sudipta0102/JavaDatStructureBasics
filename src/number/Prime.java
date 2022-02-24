@@ -9,7 +9,7 @@ public class Prime {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter number:");
 		int input = scanner.nextInt();
-		
+		scanner.close();
 		for(int i=2;i<=input/2;i++) {
 			
 			if(input%i==0) {
@@ -17,7 +17,7 @@ public class Prime {
 			}
 			
 		}
-		scanner.close();
+		
 		return true;
 	}
 	

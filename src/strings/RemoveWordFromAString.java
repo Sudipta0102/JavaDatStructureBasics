@@ -2,99 +2,78 @@ package strings;
 
 import java.util.Arrays;
 
-etao korte parini tobe kortei hobe
+
 
 public class RemoveWordFromAString {
-	
+
 	public static void func(String str, String word) {
 		
-		String[] sArr = str.split(" ");
+		String[] sArr = str.split("\\W");
+		String res = "";
+		int n = str.length();
 		
 		System.out.println(Arrays.toString(sArr));
 		
-		String res = "";
-		
 		for(int i=0;i<sArr.length;i++) {
 			
-			String str1 = sArr[i];
+			String temp = sArr[i];
 			
-			if(str1.equals(word))//it doesn't work and I have no idea why
-			{
-				continue;
+			if(temp.equals(word)) {
+				sArr[i] = "";
+			}
+		}
+		
+		System.out.println(Arrays.toString(sArr));
+		
+		for(String s: sArr ) {
+			
+			if(!s.equals("")) {
+				res+= s + " ";
 			}
 			
-			res += sArr[i] + " ";
-			
-		}
+		}		
 		
 		System.out.println(res.substring(0, res.length()-1));
-	}
-	
-	public static void funcAnother(String str, String word) {
-		
-		if(str.contains(word)) {
-			
-			String tempWord = word + "";
-			
-			System.out.println(tempWord);
-			//System.out.println(str);
-			str = str.replace(tempWord, "");
-			
-			System.out.println(str);
-			
-			tempWord = "" + word;
-			str = str.replace(tempWord, "");
-			System.out.println(str);
-			
-					
-			
-		}
-		else {
-			
-			System.out.println("Word is not ithe string");
-			return;
-		}
 		
 	}
 	
+	static String moveAllUpperCaseToEnd(String s) {
+		
+		int n = s.length();
+		
+		String strUpper = "";
+		String strElse = "";
+		
+		for(int i=0;i<n;i++) {
+			char ch = s.charAt(i);
+			if(Character.isUpperCase(ch)) {
+				strUpper += ch;
+			}
+			else {
+				strElse += ch;
+			}
+		}
 	
-	public static String removeWord(String string, String word)
-    {
-  
-        // Check if the word is present in string
-        // If found, remove it using removeAll()
-        if (string.contains(word)) {
-  
-            // To cover the case
-            // if the word is at the
-            // beginning of the string
-            // or anywhere in the middle
-            String tempWord = word + " ";
-            string = string.replaceAll(tempWord, "");
-  
-            // To cover the edge case
-            // if the word is at the
-            // end of the string
-            tempWord = " " + word;
-            string = string.replaceAll(tempWord, "");
-        }
-  
-        // Return the resultant string
-        return string;
-    }
-  
-	
+		//System.out.println(strUpper);
+		//System.out.println(strElse);
+		
+		return strElse+strUpper;
+	}
+			
+			
 
 	public static void main(String[] args) {
 
 		String str = "I Am Am You Amyou youAm Am";
+		func(str, "Am");
 		
-		//func(str, "Am");
+		String s1 = "ghjGHdffDF4567KJmnb ";
+		String s2 = "Hello";
 		
-		//funcAnother(str, "You");
-	
+		System.out.println(moveAllUpperCaseToEnd(s1));
+		System.out.println(moveAllUpperCaseToEnd(s2));
 		
-		System.out.println(removeWord(str, "Am"));
+		
 	}
 
 }

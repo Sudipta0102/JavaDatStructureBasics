@@ -45,7 +45,7 @@ public class CountEvennumberOfDigitsInAnArray {
 		
 		int[] a = {12, 345, 2, 6, 7896};
 		
-		//System.out.println(func(a));
+		System.out.println(func(a));
 	
 		System.out.println(numberOfDigitsAnother(-1000));
 	}
