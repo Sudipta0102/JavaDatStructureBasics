@@ -1,5 +1,1 @@
-/strings/
-/tree/
-/twoDArrayBasics/
-/ConvertInputStreamToString.class
-/ConcatString.class
+*.class
